@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.sameHeight.js</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    section {
+      margin: 0 auto;
+      padding: 0 10px;
+      max-width: 1000px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      background-color: #ccc;
+    }
+
+    li + li {
+      margin-top: 10px;
+    }
+
+    header {
+      margin-bottom: .5em;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.3em;
+    }
+
+    @media (min-width: 500px) {
+      li {
+        width: 48.999%;
+        float: left;
+      }
+
+      li + li {
+        margin-top: 0;
+      }
+
+      li:nth-child(odd) {
+        clear: left;
+      }
+
+      li:nth-child(even) {
+        margin-left: 2%;
+      }
+
+      li:nth-child(n+3) {
+        margin-top: 10px;
+      }
+
+      header {
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 900px) {
+      li {
+        width: 31.999%;
+      }
+
+      li + li {
+        margin-left: 2%;
+      }
+
+      li:nth-child(odd) {
+        clear: none;
+      }
+
+      li:nth-child(3n+1) {
+        margin-left: 0;
+        clear: left;
+      }
+
+      li:nth-child(n+3) {
+        margin-top: 0;
+      }
+
+      li:nth-child(n+4) {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+<section>
+  <h1>jQuery.sameHeight.js</h1>
+</section>
+
+<section>
+  <ul class="sameHeight">
+    <li>
+      <header>Vestibulum</header>
+      <p>Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at
+         eros.</p>
+    </li>
+
+    <li>
+      <header>Consectetur</header>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Nullam id
+         dolor id nibh ultricies vehicula ut id elit.</p>
+    </li>
+
+    <li>
+      <header>Nullam id dolor</header>
+      <p>Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+         Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis
+         consectetur purus sit amet fermentum.</p>
+    </li>
+
+    <li>
+      <header>Fermentum</header>
+      <p>Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis
+         consectetur purus sit amet fermentum.</p>
+    </li>
+
+    <li>
+      <header>Maecenas faucibus</header>
+      <p>Cras mattis consectetur purus sit amet fermentum.</p>
+    </li>
+
+    <li>
+      <header>Morbi leo risus</header>
+      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
+    </li>
+  </ul>
+</section>
+
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="src/jQuery.sameHeight.js"></script>
+<script>
+  (function($){
+    $(function() {
+      $('.sameHeight li').sameHeight();
+    });
+  })(jQuery);
+</script>
+</body>
+
+</html>
