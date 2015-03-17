@@ -2,7 +2,7 @@
   "name": "jquery.sameheight",
   "title": "jquery.sameHeight",
   "description": "small jQuery plugin to set the same height for sibling elements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/dirkpeter/jquery.sameHeight"
