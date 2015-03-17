@@ -2,7 +2,7 @@
 
 small jQuery plugin to set the same height for sibling elements
 
-![Bower](https://img.shields.io/bower/v/jquery.sameheight.svg?style=flat)
+![Bower](https://img.shields.io/bower/v/jquery.sameheight.svg?style=flat) ![CircleCI](https://img.shields.io/circleci/project/dirkpeter/jquery.sameHeight/master.svg?style=flat&label=Master) ![CircleCI](https://img.shields.io/circleci/project/dirkpeter/jquery.sameHeight/dev.svg?style=flat&label=Dev)
 
 
 
