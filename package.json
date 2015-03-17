@@ -19,4 +19,11 @@
   "engines": {
     "node": ">=0.10.0"
   }
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt-cli": "*",
+    "grunt": "0.4.x"
+  }
 }
