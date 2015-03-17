@@ -34,11 +34,12 @@ $('.mySelection').sameHeight({
 
 ## Config
 
-* `breakpoint` (500 [px]) - window with above witch the plugin sets a min-height. below min-height will be set to 0;
-* `delay` (10 [ms]) - buffering while resizing.
-* `initialDelay` (10 [ms]) - delay before the initial height-adjustment.
-* `minHeight` (0 [px]) - min-height for selected elements, when above the breakpoint.
-
+Option         | Default  | Info 
+---------------|---------:|------
+`breakpoint`   | 500 [px] | window with above witch the plugin sets a min-height. below min-height will be set to 0
+`delay`        |  10 [ms] | buffering while window-resizing
+`initialDelay` |  10 [ms] | delay before the initial height-adjustment
+`minHeight`    |   0 [px] | min-height for selected elements, when above the breakpoint
 
 
 ## Authors
