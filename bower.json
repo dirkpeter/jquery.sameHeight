@@ -5,7 +5,7 @@
   "main": "./src/jQuery.sameHeight.js",
   "license": "MIT",
   "ignore": [
-    ".*",
+    "**/.*",
     "Gruntfile.js",
     "package.json"
   ],
