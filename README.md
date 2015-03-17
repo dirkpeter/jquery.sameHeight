@@ -1,8 +1,7 @@
 # jquery.sameHeight
+![Bower](https://img.shields.io/bower/v/jquery.sameheight.svg?style=flat) ![CircleCI](https://img.shields.io/circleci/project/dirkpeter/jquery.sameHeight/master.svg?style=flat&label=master) ![CircleCI](https://img.shields.io/circleci/project/dirkpeter/jquery.sameHeight/dev.svg?style=flat&label=dev)
 
-small jQuery plugin to set the same height for sibling elements
-
-![Bower](https://img.shields.io/bower/v/jquery.sameheight.svg?style=flat)
+small jQuery plugin to set the same height for sibling elements even when resizing the browser-window.
 
 
 
