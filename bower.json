@@ -6,6 +6,7 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "demo/*",
     "Gruntfile.js",
     "package.json"
   ],
