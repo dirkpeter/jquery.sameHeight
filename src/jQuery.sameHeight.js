@@ -10,7 +10,7 @@
           delay:        10,
           initialDelay: 10,
           breakpoint:   500,
-          minHeight:    100
+          minHeight:    0
         }, options),
       $win = $(window),
       $this = $(this);

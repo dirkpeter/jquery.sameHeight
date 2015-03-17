@@ -15,14 +15,31 @@
       max-width: 1000px;
     }
 
+    section + section {
+      margin-top: 3em;
+    }
+
     h1 {
       text-align: center;
+      font-size: 2em;
+      margin-top: 1.5em;
+    }
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: .25em;
     }
 
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
+    }
+
+    ul:after {
+      content:'';
+      display: block;
+      clear: both;
     }
 
     li {
@@ -42,6 +59,26 @@
     p {
       margin: 0;
       line-height: 1.3em;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dt:before {
+      content: '•';
+      margin-right: 5px;
+    }
+
+    dd {
+      margin: .5em 0 2em;
+      padding-left: 10px;
+    }
+
+    .default {
+      display: inline-block;
+      color: #999;
+      margin-right: 15px;
     }
 
     @media (min-width: 500px) {
@@ -107,6 +144,7 @@
 </section>
 
 <section>
+  <h2>Demo</h2>
   <ul class="sameHeight">
     <li>
       <header>Vestibulum</header>
@@ -143,6 +181,41 @@
       <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.</p>
     </li>
   </ul>
+</section>
+
+<section>
+  <h2>Code</h2>
+  <pre>
+    $(function() {
+      $('.sameHeight li').sameHeight();
+    });
+  </pre>
+</section>
+
+<section>
+  <h2>Config</h2>
+  <dl>
+    <dt>delay</dt>
+    <dd>
+      <span class="default">default: 10 [ms]</span> buffering while resizing.
+    </dd>
+
+    <dt>initialDelay</dt>
+    <dd>
+      <span class="default">default: 10 [ms]</span> delay before the initial height-adjustment.
+    </dd>
+
+    <dt>breakpoint</dt>
+    <dd>
+      <span class="default">default: 500 [px]</span> window with above witch the plugin sets a min-height. below
+      min-height will be set to 0;
+    </dd>
+
+    <dt>minHeight</dt>
+    <dd>
+      <span class="default">default: 0 [px]</span> min-height for selected elements, when above the breakpoint
+    </dd>
+  </dl>
 </section>
 
 <script src="lib/jquery/dist/jquery.min.js"></script>
