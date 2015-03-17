@@ -1,21 +1,39 @@
 # jquery.sameHeight
+
 small jQuery plugin to set the same height for sibling elements
+
+![Bower](https://img.shields.io/bower/v/jquery.sameheight.svg?style=flat)
+
 
 
 ## Install
-`$ bower install jquery.sameheight --save`
+
+`$ bower install jquery.sameheight --save
+
 
 
 ## Usage
-`$('#myElement > li').sameHeight();`
+
+```javascript
+$('#myElement > li').sameHeight();
+```
 
 or with config
+```javascript
+$('.mySelection').sameHeight({breakpoint: 800});
+```
 
-`$('.mySelection').sameHeight({breakpoint: 800});`
 
 
 ## Config
+
 * `delay` (10 [ms]) - buffering while resizing.
 * `initialDelay` (10 [ms]) - delay before the initial height-adjustment.
 * `breakpoint` (500 [px]) - window with above witch the plugin sets a min-height. below min-height will be set to 0;
 * `minHeight` (0 [px]) - min-height for selected elements, when above the breakpoint.
+
+
+
+## Authors
+
+[Dirk Peter](https://github.com/dirkpeter)
